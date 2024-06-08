@@ -1,5 +1,8 @@
 [dependencies]
+bytes = { features = ["serde"], version = "1" }
+flate2 = { default-features = false, features = ["zlib-ng"], version = "1" }
 serde = { features = ["derive"], version = "1" }
+serde_json = "1"
 
 [package]
 edition = "2021"
