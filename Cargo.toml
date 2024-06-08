@@ -5,6 +5,11 @@ serde = { features = ["derive"], version = "1" }
 serde_json = "1"
 
 [package]
+description = "A simple converter for NBT and JSON"
 edition = "2021"
+homepage = "https://github.com/ms0503/nbt-json#readme"
+license-file = "LICENSE.md"
 name = "nbt-json"
+readme = "README.md"
+repository = "https://github.com/ms0503/nbt-json"
 version = "0.1.0"
