@@ -1,0 +1,3 @@
+[error]
+file-not-found = "指定されたファイル「%{filename}」が見つかりません"
+no-filename = "ファイル名が指定されている必要があります"

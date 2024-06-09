@@ -1,6 +1,7 @@
 [dependencies]
 bytes = { features = ["serde"], version = "1" }
 flate2 = { default-features = false, features = ["zlib-ng"], version = "1" }
+rust-i18n = "3"
 serde = { features = ["derive"], version = "1" }
 serde_json = "1"
 
@@ -12,4 +13,18 @@ license-file = "LICENSE.md"
 name = "nbt-json"
 readme = "README.md"
 repository = "https://github.com/ms0503/nbt-json"
-version = "0.1.0"
+version = "0.1.1"
+
+[package.metadata.i18n]
+available-locales = [
+    "de_DE",
+    "en_US",
+    "fr_FR",
+    "it_IT",
+    "ja_JP",
+    "ko_KR",
+    "zh_CN",
+    "zh_TW"
+]
+default-locale = "en_US"
+load-path = "locales"
