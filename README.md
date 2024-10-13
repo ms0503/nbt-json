@@ -30,3 +30,16 @@ $ nbt-json input.dat -o output.json -f    # NBT -> JSON, out: output.json even i
 $ nbt-json input.json -f                  # JSON -> NBT, out: input.dat even if it already exists
 $ nbt-json input.json -o output.dat -f    # JSON -> NBT, out: output.dat even if it already exists
 ```
+
+# Supported locations
+
+| Name     | Code  | Source    |
+|----------|-------|-----------|
+| Deutsch  | de_DE | by DeepL  |
+| English  | en_US | by ms0503 |
+| Français | fr_FR | by DeepL  |
+| Italiano | it_IT | by DeepL  |
+| 日本語      | ja_JP | by ms0503 |
+| 한국어      | ko_KR | by DeepL  |
+| 简体中文     | zh_CN | by DeepL  |
+| 繁體中文     | zh_TW | by DeepL  |
