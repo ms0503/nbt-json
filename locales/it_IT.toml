@@ -1,3 +1,26 @@
 [error]
-file-not-found = "il file specificato '%{filename}' non è stato trovato"
-no-filename = "deve essere specificato il nome file"
+file-not-found = "Il file specificato “%{filename}” non può essere trovato."
+invalid-json = "Non è riuscita l'analisi di JSON. Motivo: %{reason}"
+out-file-already-exist = """
+Il file di output specificato “%{filename}” esiste già.
+Cancellare il file o usare l'opzione --force."""
+output-failed = "Impossibile scrivere il file. Motivo: %{reason}"
+read-failed = "Impossibile leggere il file. Motivo: %{reason}"
+tag-resolving-failed = "Impossibile risolvere il tag. Motivo: %{reason}"
+
+[help]
+about = "Un semplice convertitore NBT/JSON"
+arguments = "Argomenti"
+filename = "Nome del file"
+filetype = "Tipo di file di NBT"
+force = "Forzare l'esecuzione"
+help = "Mostra aiuto"
+options = "Opzioni"
+out = "Nome del file di output. Se viene specificato -, l'output viene inviato a stdout"
+usage = "Utilizzo"
+version = "Mostra la versione"
+
+[warn]
+out-file-already-exist = """
+Il file di output specificato “%{filename}” esiste già.
+Forzare la sovrascrittura."""

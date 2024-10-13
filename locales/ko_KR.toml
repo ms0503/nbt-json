@@ -1,3 +1,26 @@
 [error]
-file-not-found = "지정한 파일 'abc'를 찾을 수 없습니다."
-no-filename = "파일명을 지정해야 합니다."
+file-not-found = "지정한 파일 “%{filename}”을(를) 찾을 수 없습니다."
+invalid-json = "JSON을 구문 분석하지 못했습니다. 이유: %{reason}"
+out-file-already-exist = """
+지정한 출력 파일 “%{filename}”이(가) 이미 존재합니다.
+파일을 삭제하거나 --force 옵션을 사용하세요."""
+output-failed = "파일을 쓰지 못했습니다. 이유: %{reason}"
+read-failed = "파일을 읽지 못했습니다. 이유: %{reason}"
+tag-resolving-failed = "태그를 확인하지 못했습니다. 이유: %{reason}"
+
+[help]
+about = "간단한 NBT/JSON 변환기"
+arguments = "인수"
+filename = "파일 이름"
+filetype = "NBT의 파일 유형"
+force = "강제 실행"
+help = "도움말 표시"
+options = "옵션"
+out = "출력 파일 이름. 를 지정하면 표준 출력으로 출력합니다"
+usage = "사용법"
+version = "버전 표시"
+
+[warn]
+out-file-already-exist = """
+지정한 출력 파일 “%{filename}”이(가) 이미 있습니다.
+강제로 덮어씁니다."""

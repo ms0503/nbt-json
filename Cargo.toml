@@ -1,9 +1,35 @@
 [dependencies]
-bytes = { features = ["serde"], version = "1" }
-flate2 = { default-features = false, features = ["zlib-ng"], version = "1" }
+cesu8 = "1"
+color-print = "0.3"
 rust-i18n = "3"
-serde = { features = ["derive"], version = "1" }
 serde_json = "1"
+
+[dependencies.bytes]
+features = [
+    "serde"
+]
+version = "1"
+
+[dependencies.clap]
+features = [
+    "derive",
+    "help",
+    "string"
+]
+version = "4"
+
+[dependencies.flate2]
+default-features = false
+features = [
+    "zlib-ng"
+]
+version = "1"
+
+[dependencies.serde]
+features = [
+    "derive"
+]
+version = "1"
 
 [package]
 description = "A simple converter for NBT and JSON"
@@ -13,7 +39,7 @@ license-file = "LICENSE.md"
 name = "nbt-json"
 readme = "README.md"
 repository = "https://github.com/ms0503/nbt-json"
-version = "0.1.1"
+version = "0.2.0"
 
 [package.metadata.i18n]
 available-locales = [

@@ -1,3 +1,26 @@
 [error]
-file-not-found = "le fichier spécifié '%{filename}' est introuvable"
-no-filename = "doit être spécifié le nom du fichier"
+file-not-found = "Le fichier spécifié « %{filename} » est introuvable."
+invalid-json = "Échec de l'analyse du JSON. Motif: %{reason}"
+out-file-already-exist = """
+Le fichier de sortie spécifié « %{filename} » existe déjà.
+Veuillez supprimer le fichier ou utiliser l'option --force."""
+output-failed = "Échec de l'écriture du fichier. Motif: %{reason}"
+read-failed = "Échec de la lecture du fichier. Motif: %{reason}"
+tag-resolving-failed = "Échec de la résolution de la balise. Motif: %{reason}"
+
+[help]
+about = "Un simple convertisseur NBT/JSON"
+arguments = "Arguments"
+filename = "Nom de fichier"
+filetype = "Type de fichier de NBT"
+force = "Obligation d'exécution"
+help = "Afficher l'aide"
+options = "Options"
+out = "Nom du fichier de sortie. Si - est spécifié, la sortie se fait sur stdout"
+usage = "Utilisation"
+version = "Afficher la version"
+
+[warn]
+out-file-already-exist = """
+Le fichier de sortie spécifié « %{filename} » existe déjà.
+Forcer l'écrasement."""

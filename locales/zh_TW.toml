@@ -1,3 +1,26 @@
 [error]
-file-not-found = "找不到指定的檔案“%{filename}”"
-no-filename = "必須指定檔案名稱"
+file-not-found = "無法找到指定的檔案 「%{filename}」。"
+invalid-json = "解析 JSON 失敗。原因: %{reason}"
+out-file-already-exist = """
+指定的輸出檔案 「%{filename}」 已經存在。
+請刪除檔案或使用 --force 選項。"""
+output-failed = "寫入檔案失敗。原因: %{reason}"
+read-failed = "讀取檔案失敗。原因：%{reason}"
+tag-resolving-failed = "解析標籤失敗。原因：%{reason}"
+
+[help]
+about = "簡單的 NBT/JSON 轉換器"
+arguments = "論點"
+filename = "檔案名稱"
+filetype = "NBT 的檔案類型"
+force = "強制執行"
+help = "顯示說明"
+options = "選項"
+out = "輸出檔案名稱。如果指定 -，則輸出到標準輸出"
+usage = "使用方式"
+version = "顯示版本"
+
+[warn]
+out-file-already-exist = """
+指定的輸出檔案 「%{filename}」 已經存在。
+強制覆寫。"""

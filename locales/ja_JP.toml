@@ -1,3 +1,26 @@
 [error]
 file-not-found = "指定されたファイル「%{filename}」が見つかりません"
-no-filename = "ファイル名が指定されている必要があります"
+invalid-json = "JSONの解析に失敗しました。理由: %{reason}"
+out-file-already-exist = """
+指定された出力ファイル「%{filename}」は既に存在しています。
+ファイルを削除するか--forceオプションを使用してください。"""
+output-failed = "ファイルの書き込みに失敗しました。理由: %{reason}"
+read-failed = "ファイルの読み込みに失敗しました。理由: %{reason}"
+tag-resolving-failed = "タグの解決に失敗しました。理由: %{reason}"
+
+[help]
+about = "シンプルなNBT・JSONコンバーター"
+arguments = "引数"
+filename = "ファイル名"
+filetype = "NBTファイル形式"
+force = "強制的に実行"
+help = "ヘルプを表示"
+options = "オプション"
+out = "出力ファイル名。-を指定した場合は標準出力へ出力"
+usage = "使い方"
+version = "バージョンを表示"
+
+[warn]
+out-file-already-exist = """
+指定された出力ファイル「%{filename}」は既に存在しています。
+強制的に上書きします。"""
